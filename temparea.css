@@ -1,0 +1,47 @@
+.par{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 100px 100px 100px;
+    grid-gap: 10px;
+    grid-template-areas: 
+        " one two two three"
+        " one four five six"
+        " one seven eight six"
+    ;
+}
+.one{
+    background-color: rgb(101, 246, 5);
+    grid-area: one;
+}
+.two{
+    background-color: rgb(101, 246, 5);
+    grid-area: two;
+}
+.three{
+    background-color: red;
+    grid-area: three;
+
+}
+.four{
+    background-color: yellow;
+    grid-area: four;
+}
+.five{
+    background-color: red;
+    grid-area: five;
+}
+.six{
+    background-color: rgb(101, 246, 5);
+    grid-area: six;
+}
+.seven{
+    background-color: red;
+    grid-area: seven;
+}
+.eight{
+    background-color: yellow;
+    grid-area: eight;
+}
